@@ -4,7 +4,7 @@ Description=Gunicorn server for SITENAME
 [Server]
 Restart=on-failure
 User=evan
-WorkingDirectory=/home/evan/sites/SITENAME/superlists
+WorkingDirectory=/home/evan/sites/SITENAME/source
 ExecStart=/home/evan/sites/SITENAME/virtualenv/bin/gunicorn \
 	--bind unix:/tmp/SITENAME.socket \
 	superlists.wsgi:application

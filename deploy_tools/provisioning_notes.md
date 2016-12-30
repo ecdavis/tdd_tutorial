@@ -30,6 +30,6 @@ Assume we have a user account at /home/username
 └── sites
 	└── SITENAME
 		├── database
-		├── superlists
+		├── source
 		├── static
 		└── virtualenv

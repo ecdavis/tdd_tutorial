@@ -1,7 +1,7 @@
 [Unit]
 Description=Gunicorn server for SITENAME
 
-[Server]
+[Service]
 Restart=on-failure
 User=evan
 WorkingDirectory=/home/evan/sites/SITENAME/source

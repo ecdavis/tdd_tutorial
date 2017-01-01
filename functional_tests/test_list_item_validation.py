@@ -54,7 +54,7 @@ class ItemValidationTest(FunctionalTest):
         # Evan starts a list and causes a validation error
         self.browser.get(self.server_url)
         self.get_item_input_box().send_keys('Banter too thick\n')
-        self.check_for_for_in_list_table('1: Banter too thick\n')
+        self.check_for_row_in_list_table('1: Banter too thick')
         self.get_item_input_box().send_keys('Banter too thick\n')
 
         error = self.get_error_element()

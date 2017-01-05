@@ -19,6 +19,10 @@ class LoginTest(FunctionalTest):
 		time.sleep(1)
 
 		# A message appears telling him an email has been sent
+		body = self.browser.find_element_by_tag_name('body')
+		self.assertIn('Check your email', body.text)
+
+		# He checks his email and finds a message
 		email = mail.outbox[0]
 		self.assertIn(TEST_EMAIL, email.to)
 		self.assertEqual(email.subject, SUBJECT)

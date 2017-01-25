@@ -15,7 +15,7 @@ def create_session_on_server(host, email):
     ).decode().strip()
 
 
-def reset_database(self):
+def reset_database(host):
     subprocess.check_call(
         ['fab', 'reset_database', '--host=evan@{}'.format(host)],
         cwd=THIS_FOLDER

@@ -22,6 +22,8 @@ e.g.,, on Ubuntu:
 
 * see gunicorn-systemd.template.service
 * replace SITENAME with, e.g., staging.example.com
+* replace EMAIL_USER with email account user
+* replace EMAIL_PASSWORD with email account password
 
 ## Folder structure:
 Assume we have a user account at /home/username
